@@ -1,0 +1,92 @@
+<div class="dialog_section"> 
+	<div class="dialog_row"><div class="dialog_label"> Concepto </div><div class="dialog_value"><input id="input_concepto" type="text" style="width: 17em" value='{%titulo%}'/></div></div>
+	<div class="dialog_row"><div class="dialog_label"> Descripción </div><div class="dialog_value"><textarea id="textarea_descripcion" style="width: 17em">{%descripcion%}</textarea></div></div>
+</div>
+<div class="dialog_section"> 
+	<div class="dialog_row"><div class="dialog_label"> Cantidad </div> <div class="dialog_value"> <input id="input_cantidad" type="number" style="width: 15em; text-align: right;" value='{%cantidad%}'/> € </div></div>
+	<div class="dialog_row"><div class="dialog_label"> Tipo </div><div class="dialog_value"> <input id="radio_ingresos" name="tipo_concepto" type="radio" value="0" {%ingresos%}><label for="radio_ingresos">Ingresos</label><input id="radio_gastos" name="tipo_concepto" type="radio" value="1" {%gastos%}><label for="radio_gastos">Gastos</label></div></div> 
+	<div class="dialog_share" style="{%modo_visible%}"> 
+		<div class="dialog_row"><div class="dialog_label"></div><div class="dialog_value"><input id="check_gastoscompartidos" type="checkbox" {%gastos_compartidos%}><label for="check_gastoscompartidos">Gastos Compartidos</label></div></div>
+		<div class="dialog_row dialog_gastos" style="{%sharing_visible%}"><div class="dialog_label"> Modo </div> <div class="dialog_value"><input id="radio_equal_sharing" name="modo_sharing" type="radio" value="0" {%equals%}><label for="radio_equal_sharing">Equal</label><input id="radio_fixed_sharing" name="modo_sharing" type="radio" value="1" {%fixed%}><label for="radio_fixed_sharing">Fixed</label></div></div>
+		<div class="dialog_row dialog_gastos" style="{%sharing_visible%}"><div id="lista_sharing" class="sharinglist">{%sharingList%}</div></div>
+	</div>
+</div>
+<div class="dialog_section">
+	<div class="dialog_row"><div class="dialog_label"> Propietario </div> <div class="dialog_value"> <span id="span_usuario" style="width: 18em; color: blue;"> {%usuario%} </span></div></div>
+</div>
+<script>
+    function updateSharing() {
+        var cantidad = $("#input_cantidad").val();
+        if ($.isNumeric(cantidad)) {
+            var gastos_compartidos = $("#check_gastoscompartidos").prop("checked");
+            if (gastos_compartidos) {
+                var modo = $("#radio_equal_sharing").prop("checked");
+                if (modo) {
+                    $("#lista_sharing > div").each(function (index) {
+                        var sharedPart = cantidad / userList.length;
+                        $(".sharedValue").prop("readonly", true).val(sharedPart);
+                    });
+                } else {
+                    $(".sharedValue").prop("readonly", false);
+                }
+            } else {
+                $(".sharedValue").val("");
+            }
+        } else {
+            $(".sharedValue").val("");
+            $(".sharedValue").prop("readonly", false);
+        }
+    }
+
+    $(document).ready(function () {
+        $("#radio_ingresos").on("click", function (e) {
+            e.stopPropagation();
+            $('.dialog_share').hide();
+            $('.dialog_gastos').hide();
+            $('#check_gastoscompartidos').prop('checked', false);
+            $(".sharedValue").prop("readonly", false);
+            $(".sharedValue").val("");
+            $("#radio_equal_sharing").prop('checked', true);
+        });
+
+        $("#radio_gastos").on("click", function (e) {
+            e.stopPropagation();
+            $("#check_gastoscompartidos").prop('checked', true);
+            if ($(this).is(":checked")) {
+                $(".sharedValue").val("");
+                $("#radio_equal_sharing").prop('checked', true);
+            }
+            $('.dialog_share').show();
+            $('.dialog_gastos').show();
+            updateSharing();
+
+        });
+        $("#check_gastoscompartidos").off("change").on("change", function (e) {
+            e.stopPropagation();
+            $('.dialog_gastos').toggle();
+            if ($(this).is(":checked")) {
+                $(".sharedValue").val("");
+                $("#radio_equal_sharing").prop('checked', true);
+            }
+            updateSharing();
+            return false;
+        });
+
+
+        $("#input_cantidad").on("change", function (e) {
+            e.stopPropagation();
+            updateSharing();
+        });
+        var lastEvent = { el: undefined, checked: undefined };
+        $("#radio_equal_sharing").off("click").on("click", function (e) {
+            e.stopPropagation();
+            updateSharing();
+        });
+        $("#radio_fixed_sharing").off("click").on("click", function (e) {
+            e.stopPropagation();
+            updateSharing();
+        });
+
+    });
+    //# sourceURL=/conta.html
+</script>

@@ -1,0 +1,384 @@
+input[type=text], input[type=password], input[type=number], textarea {
+    padding: 5px;
+    border: 2px solid black;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+input[type=text], input[type=password], input[type=number], select, textarea {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 2px solid black;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+    input[type=text]:read-only, input[type=password]:read-only, input[type=number]:read-only, select:focus, textarea:read-only {
+        border-color: gray;
+    }
+
+    input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, select:focus, textarea:focus {
+        border-color: #333;
+    }
+.filterTipo {
+    width: 15.5em;
+}
+
+.ui-dialog {
+    z-index: 1100 !important;
+}
+
+.menutoolsContainer{
+	display: inline-block;	
+}
+
+.pageMenuContainer{
+	display: inline-block;	
+}
+
+ul.pageMenu {
+    display: inline-block;
+    padding-left: 0em;
+    margin: 0em;
+}
+
+ul.pageMenu > li {
+    margin: 0em;
+    display: inline-block;
+    /* You can also add some margins here to make it look prettier */
+    zoom:1;
+    *display:inline;
+    /* this fix is needed for IE7- */
+}
+
+
+.canvasContainer {
+    position: relative;
+    height: 24em;
+    width: 24em;
+}
+
+
+.roundedContainer {
+    overflow: hidden;
+    border-radius: 1.5em;
+    border: 1px solid black;
+}
+
+.mainContainer {
+    overflow: auto;
+    border-radius: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    border: 1px solid white;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 57em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headSection {
+    padding-right: 1em;
+    padding-left: 1em;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 3em;
+    z-index: 1001;
+    background-color:  honeydew;
+}
+
+.mainBox {
+    margin-top: 3em;
+    padding-top: 1em;
+    width: 100%;
+    
+}
+
+#dm_login_panel {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    padding-right: 1em;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    margin-top: 0.4em;
+}
+.butContaToolImage {
+    width: 2em;
+    height: 2em;
+}
+
+.dialog_section {
+    overflow: auto;
+    border-radius: 1em;
+    padding-top: 0.5em;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+    border: 1px solid black;
+    margin: 0.5em;
+}
+
+.dialog_label{
+	display: inline-block;
+	padding-right: 0.5em;
+	width: 25%;
+	text-align: right;
+	vertical-align: top;
+	font-weight: bold;
+}
+
+.dialog_value{
+	display: inline-block;
+	width: 65%;
+}
+
+.dialog_row {
+    width: 100%;
+    padding-top: 0.5em;
+}
+.dialogo_row_lista{
+	background-color: #e0e0e0;
+}
+
+.menuItem {
+    background-color: aliceblue;
+    margin: 0em !important;
+    border: 1px solid #132b14;
+    cursor: pointer;
+}
+
+    .menuItem:hover {
+        background-color: lightcyan;
+        margin: 0em !important;
+        border: 1px solid #132b14;
+        cursor: pointer;
+    }
+.menuItem:active {
+    color: black;
+}
+.menuItemActive {
+    background-color: lightblue;
+    border: 1px solid #132b14;
+}
+
+.menuItemActive:hover {
+    background-color: powderblue;
+    border: 1px solid #132b14;
+}
+
+.labelUser, .labelUser:hover, .labelUser:active {
+    background-color: palegoldenrod;
+}
+
+
+.libroContainer {
+    overflow: auto;
+    border-radius: 1.5em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    border: 1px solid black;
+    margin-bottom: 1em;
+    text-align: left;
+    width: 57em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.lista_row {
+    width: 55em;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.listaExp {
+    width: 2em;
+    display: inline-block;
+    text-align: right;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.listaTitulo {
+    width: 38.5em;
+    display: inline-block;
+    text-align: left;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 0.5em;
+}
+
+.listaUsuario {
+    width: 7em;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.listaCantidad {
+    width: 7em;
+    display: inline-block;
+    text-align: right;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.contabilidadCantidad_Child {
+    margin-right: 1.5em;
+}
+
+.listaToolImage {
+    width: 1.1em;
+    height: 1.1em;
+}
+
+.listaHead {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    display: inline-block;
+    width: 21em;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+.listaHeadTitulo {
+    width: 41em;
+}
+.listaHeadUsuario {
+    width: 7em;
+}
+.listaHeadCantidad {
+    width: 6.75em;
+}
+.listaTipo {
+    width: 1em;
+    height: 1em;
+    margin-left: 0.2em;
+    margin-right: 1em;
+    vertical-align: text-bottom;
+}
+
+.listaTools {
+    padding: 0.2em;
+}
+
+.imageExpand {
+    width: 1.5em;
+    height: 1.5em;
+}
+
+@media only screen and (max-width: 480px) {
+    html {
+        font-size: 2em;
+    }
+    .filterTipo {
+        width: 15em;
+    }
+
+    .headSection {
+        margin-left: 0em;
+        margin-right: 0em;
+        padding-right: 0em;
+        padding-left: 0em;
+        top: 0px;
+        z-index: 1001;
+        background-color: honeydew;
+    }
+
+    .mainBox {
+        margin-top: 3em;
+    }
+
+    .butContaToolImage {
+        width: 4em;
+        height: 4em;
+    }
+
+    .pageMenuContainer {
+        width: 5em;
+    }
+    .canvasContainer {
+        position: relative;
+        height: 14em;
+        width: 14em;
+    }
+    .mainContainer {
+        border-radius: 0.75em;
+        padding-right: 0.5em;
+        padding-left: 0.5em;
+        border: 1px solid white;
+        margin-bottom: 0em;
+        width: 29em;
+    }
+
+    .libroContainer {
+        border-radius: 0.75em;
+        padding-bottom: 0.5em;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin-bottom: 0em;
+        width: 29em;
+        border: 0px solid white;
+    }
+
+    .roundedContainer {
+        overflow: hidden;
+        border-radius: 0.75em;
+        border: 1px solid white;
+    }
+
+    .lista_row {
+        width: 28.5em;
+    }
+
+    .listaTitulo {
+        width: 14em;
+    }
+
+    .listaUsuario {
+        width: 5em;
+    }
+
+    .listaCantidad {
+        width: 7.3em;
+    }
+
+    .listaToolImage {
+        width: 3.5em;
+        height: 3.5em;
+    }
+
+    .listaToolsBut {
+        vertical-align: sub;
+    }
+
+    .listaHead {
+        padding-top: 0.1em;
+        padding-bottom: 0.1em;
+    }
+
+    .listaHeadTitulo {
+        width: 16em;
+    }
+
+    .listaHeadUsuario {
+        width: 5em;
+    }
+
+    .listaHeadCantidad {
+        width: 7.35em;
+    }
+
+    .listaTipo {
+        width: 1em;
+        height: 1em;
+        margin-left: 0.1em;
+        margin-right: 0.5em;
+    }
+
+}

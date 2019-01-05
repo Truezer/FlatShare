@@ -1,0 +1,6 @@
+D:\Desarrollo\Projects\Flat Share\obj\Debug\FlatShare.njsprojAssemblyReference.cache
+D:\Desarrollo\Projects\Flat Share\obj\Debug\FlatShare.njsproj.CoreCompileInputs.cache
+D:\Desarrollo\Projects\Flat Share\bin\Microsoft.NodejsTools.WebRole.dll
+D:\Desarrollo\Projects\FlatShare\obj\Debug\FlatShare.njsprojAssemblyReference.cache
+D:\Desarrollo\Projects\FlatShare\obj\Debug\FlatShare.njsproj.CoreCompileInputs.cache
+D:\Desarrollo\Projects\FlatShare\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,17 @@
+﻿<div class="dialog_row"><div class="dialog_label"><span> Concepto </span></div><div class="dialog_value"><input class="filterTitulo" type="text" style="width: 14.5em" value="{%titulo%}"/></div></div>
+<div class="dialog_row"><div class="dialog_label"><span> Cantidad </span></div><div class="dialog_value"><select class="filterOp" style="width: 3em;"><option {%op1%} value="0">=</option><option {%op2%} value="1">>=</option><option {%op3%} value="2"><=</option></select><input class="filterCantidad" type="number" style="width: 10.5em; margin-left: 1em;" value="{%cantidad%}"/></div></div>
+<div class="dialog_row"><div class="dialog_label"><span> Tipo </span></div><div class="dialog_value"><select class="filterTipo"><option {%tipo1%}></option><option {%tipo2%} value="0">Ingresos</option><option {%tipo3%} value="1">Gastos</option></select></div></div>
+<div class="dialog_row dialog_sharing" style="display: none"><div class="dialog_label"></div><div class="dialog_value"><input id="check_gastoscompartidos" type="checkbox" class="filterSharing" value="{%sharing%}"/><label for="check_gastoscompartidos"> Gastos compartidos </label></div></div>
+
+<script>
+$(document).ready(function(){
+
+    $(".filterTipo").on("change", function(){
+        $('.dialog_sharing').toggle();
+        if (fs_engine.isEmptyVar($(this).val())) {
+            $(".filterSharing").val("");
+		}
+	});
+
+});
+</script>

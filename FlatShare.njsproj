@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4468d3b7-672d-4354-bda2-5a4ece4c51f7}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>server.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="public\filter.html">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="server.js" />
+    <Content Include="public\conta.html" />
+    <Content Include="public\empty.html" />
+    <Content Include="public\login.html" />
+    <Content Include="sessions\487e6b0d-9de2-48cb-8b34-6250b20ae934.json" />
+    <Content Include="views\index.html" />
+    <Content Include="public\css\fs.css" />
+    <Content Include="public\css\jquery-ui.css" />
+    <Content Include="public\css\jquery-ui.structure.css" />
+    <Content Include="public\css\jquery-ui.theme.css" />
+    <Content Include="public\css\ui.jqgrid.css" />
+    <Content Include="public\js\Chart.min.js" />
+    <Content Include="public\js\dmCore.js" />
+    <Content Include="public\js\dmIndex.js" />
+    <Content Include="public\js\dmRoute.js" />
+    <Content Include="public\js\dmTools.js" />
+    <Content Include="public\js\fsDialog.js" />
+    <Content Include="public\js\fsEngine.js" />
+    <Content Include="public\js\grid.locale-es.js" />
+    <Content Include="public\js\jqDialog.js" />
+    <Content Include="public\js\jqGrid.js" />
+    <Content Include="public\js\jquery-ui.js" />
+    <Content Include="public\js\jquery.js" />
+    <Content Include="public\js\tinymce.min.js" />
+    <Content Include="public\css\images\minus.png" />
+    <Content Include="public\css\images\plus.png" />
+    <Content Include="public\css\images\title.png" />
+    <Content Include="public\css\images\ui-icons_444444_256x240.png" />
+    <Content Include="public\css\images\ui-icons_555555_256x240.png" />
+    <Content Include="public\css\images\ui-icons_777620_256x240.png" />
+    <Content Include="public\css\images\ui-icons_777777_256x240.png" />
+    <Content Include="public\css\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="public\css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="public\css\images\user.png" />
+    <Content Include="public\js\biografia\dm_biografia.controller.js" />
+    <Content Include="public\js\biografia\dm_biografia.route.js" />
+    <Content Include="public\js\parts\main.js" />
+    <Content Include="public\js\parts\pagos.js" />
+    <Content Include="public\js\translations\ar.js" />
+    <Content Include="public\js\translations\ast.js" />
+    <Content Include="public\js\translations\bg.js" />
+    <Content Include="public\js\translations\ca.js" />
+    <Content Include="public\js\translations\cs.js" />
+    <Content Include="public\js\translations\da.js" />
+    <Content Include="public\js\translations\de-ch.js" />
+    <Content Include="public\js\translations\de.js" />
+    <Content Include="public\js\translations\el.js" />
+    <Content Include="public\js\translations\en-au.js" />
+    <Content Include="public\js\translations\eo.js" />
+    <Content Include="public\js\translations\es.js" />
+    <Content Include="public\js\translations\et.js" />
+    <Content Include="public\js\translations\eu.js" />
+    <Content Include="public\js\translations\fa.js" />
+    <Content Include="public\js\translations\fi.js" />
+    <Content Include="public\js\translations\fr.js" />
+    <Content Include="public\js\translations\gl.js" />
+    <Content Include="public\js\translations\gu.js" />
+    <Content Include="public\js\translations\he.js" />
+    <Content Include="public\js\translations\hr.js" />
+    <Content Include="public\js\translations\hu.js" />
+    <Content Include="public\js\translations\it.js" />
+    <Content Include="public\js\translations\ja.js" />
+    <Content Include="public\js\translations\km.js" />
+    <Content Include="public\js\translations\kn.js" />
+    <Content Include="public\js\translations\ko.js" />
+    <Content Include="public\js\translations\ku.js" />
+    <Content Include="public\js\translations\lv.js" />
+    <Content Include="public\js\translations\nb.js" />
+    <Content Include="public\js\translations\ne.js" />
+    <Content Include="public\js\translations\nl.js" />
+    <Content Include="public\js\translations\no.js" />
+    <Content Include="public\js\translations\oc.js" />
+    <Content Include="public\js\translations\pl.js" />
+    <Content Include="public\js\translations\pt-br.js" />
+    <Content Include="public\js\translations\pt.js" />
+    <Content Include="public\js\translations\ro.js" />
+    <Content Include="public\js\translations\ru.js" />
+    <Content Include="public\js\translations\si.js" />
+    <Content Include="public\js\translations\sk.js" />
+    <Content Include="public\js\translations\sq.js" />
+    <Content Include="public\js\translations\sv.js" />
+    <Content Include="public\js\translations\tr.js" />
+    <Content Include="public\js\translations\tt.js" />
+    <Content Include="public\js\translations\ug.js" />
+    <Content Include="public\js\translations\uk.js" />
+    <Content Include="public\js\translations\vi.js" />
+    <Content Include="public\js\translations\zh-cn.js" />
+    <Content Include="public\js\translations\zh.js" />
+    <Content Include="public\js\plugins\codesample\css\prism.css" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-cool.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-cry.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-embarassed.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-foot-in-mouth.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-frown.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-innocent.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-kiss.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-laughing.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-money-mouth.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-sealed.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-smile.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-surprised.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-tongue-out.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-undecided.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-wink.gif" />
+    <Content Include="public\js\plugins\emoticons\img\smiley-yell.gif" />
+    <Content Include="public\js\plugins\help\img\logo.png" />
+    <Content Include="public\js\plugins\visualblocks\css\visualblocks.css" />
+    <Content Include="public\js\skins\lightgray\content.inline.min.css" />
+    <Content Include="public\js\skins\lightgray\content.min.css" />
+    <Content Include="public\js\skins\lightgray\content.mobile.min.css" />
+    <Content Include="public\js\skins\lightgray\skin.min.css" />
+    <Content Include="public\js\skins\lightgray\skin.mobile.min.css" />
+    <Content Include="public\js\skins\lightgray\fonts\tinymce-small.svg" />
+    <Content Include="public\js\skins\lightgray\fonts\tinymce.svg" />
+    <Content Include="public\js\skins\lightgray\img\anchor.gif" />
+    <Content Include="public\js\skins\lightgray\img\loader.gif" />
+    <Content Include="public\js\skins\lightgray\img\object.gif" />
+    <Content Include="public\js\skins\lightgray\img\trans.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="db" />
+    <Folder Include="FlatShare" />
+    <Folder Include="private\" />
+    <Folder Include="public" />
+    <Folder Include="public\css" />
+    <Folder Include="public\css\images" />
+    <Folder Include="public\js" />
+    <Folder Include="public\js\biografia" />
+    <Folder Include="public\js\parts" />
+    <Folder Include="public\js\plugins" />
+    <Folder Include="public\js\plugins\codesample" />
+    <Folder Include="public\js\plugins\codesample\css" />
+    <Folder Include="public\js\plugins\emoticons" />
+    <Folder Include="public\js\plugins\emoticons\img" />
+    <Folder Include="public\js\plugins\help" />
+    <Folder Include="public\js\plugins\help\img" />
+    <Folder Include="public\js\plugins\visualblocks" />
+    <Folder Include="public\js\plugins\visualblocks\css" />
+    <Folder Include="public\js\skins" />
+    <Folder Include="public\js\skins\lightgray" />
+    <Folder Include="public\js\skins\lightgray\fonts" />
+    <Folder Include="public\js\skins\lightgray\img" />
+    <Folder Include="public\js\translations" />
+    <Folder Include="sessions" />
+    <Folder Include="views" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="private\model.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="private\model_tools.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="private\render.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="private\render_tools.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="private\tools.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\js\jQuery.dialogOptions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="public\js\parts\plan.js">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
